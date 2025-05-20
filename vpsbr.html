@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Planes de Disney+</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0c0f24;
+      color: #fff;
+      padding: 20px;
+      overflow-x: hidden;
+    }
+
+    h1 {
+      text-align: center;
+      margin-top: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 10px;
+      font-size: 24px;
+    }
+
+    .disney-logo {
+      width: 40px;
+      height: 40px;
+    }
+
+    .plan-container {
+      max-width: 700px;
+      margin: 40px auto;
+      display: grid;
+      gap: 20px;
+    }
+
+    .plan {
+      background-color: #31ab2b;
+      border-radius: 12px;
+      padding: 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      animation: fadeInUp 0.8s ease forwards;
+      opacity: 0;
+      transform: translateY(20px);
+    }
+
+    .plan:nth-child(2) {
+      animation-delay: 0.2s;
+    }
+    .plan:nth-child(3) {
+      animation-delay: 0.4s;
+    }
+
+    .plan-info {
+      text-align: left;
+    }
+
+    .plan-info h2 {
+      margin: 0;
+      font-size: 18px;
+    }
+
+    .plan-info p {
+      margin: 5px 0 0;
+      color: #fff;
+      font-weight: bold;
+    }
+
+    .select-button {
+      background-color: #000;
+      color: #2eff1f;
+      border: 2px solid #000;
+      padding: 10px 18px;
+      border-radius: 8px;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .select-button:hover {
+      background-color: #18ad40;
+      color: #000;
+      border: 2px solid #000;
+    }
+
+    @keyframes fadeInUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    footer {
+      text-align: center;
+      font-size: 12px;
+      color: #aaa;
+      margin-top: 50px;
+    }
+  </style>
+</head>
+<body>
+
+<h1>
+  <img src="https://raw.githubusercontent.com/Urvps2025/Urvps2025.github.io/refs/heads/main/br.png" alt="Disney+" class="disney-logo">
+  Brasil Servers
+</h1>
+
+<div class="plan-container">
+  <div class="plan">
+    <div class="plan-info">
+      <h2>Brasil - 1</h2>
+      <p>Online - 1000 Mbps/s</p>
+    </div>
+    <a href="#" onclick="redirigir(this, 'https://gen.danaelssh.space/')">
+      <button class="select-button">Seleccionar</button>
+    </a>
+  </div>
+
+  <div class="plan">
+    <div class="plan-info">
+      <h2>Brasil - 2</h2>
+      <p>Online - 800 Mbps/s</p>
+    </div>
+    <a href="#" onclick="redirigir(this, 'https://gen.danaelssh.space/br2.php')">
+      <button class="select-button">Seleccionar</button>
+    </a>
+  </div>
+
+  <div class="plan">
+    <div class="plan-info">
+      <h2>Volver Al Inicio</h2>
+      <p>DanaelSSH</p>
+    </div>
+    <a href="#" onclick="redirigir(this, 'https://wa.me/525658186409?text=Hola,%20quiero%20el%20plan%20Disney+%20de%203%20meses')">
+      <button class="select-button">Seleccionar</button>
+    </a>
+  </div>
+</div>
+
+<footer>
+  DanaelSSH 2024-2025©.
+</footer>
+
+<script>
+  function redirigir(el, url) {
+    const btn = el.querySelector('button');
+    btn.textContent = 'Redirigiendo...';
+    btn.disabled = true;
+    setTimeout(() => {
+      window.location.href = url;
+    }, 500);
+  }
+</script>
+
+</body>
+</html>
